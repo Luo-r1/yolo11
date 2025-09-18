@@ -1,0 +1,29 @@
+
+train: F:\envs_workstation\yolo11\good_datasets\train\images
+val: F:\envs_workstation\yolo11\good_datasets\val\images
+
+nc: 1
+
+names: ['barcode']
+
+
+augment:
+  # 损失权重
+  box: 12.0
+  cls: 0.2
+  dfl: 1.5
+
+  # 数据增强
+  hsv_h: 0.02
+  hsv_s: 0.5
+  hsv_v: 0.2
+  degrees: 15.0
+  translate: 0.1
+  scale: 0.3
+  shear: 5.0
+  perspective: 0.0015
+  fliplr: 0.5
+  mosaic: 1.0
+  mixup: 0.2
+  gridmask: True
+  gridmask_ratio: 0.25
