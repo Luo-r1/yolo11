@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 
 def train_stage1():
     """第一阶段训练：仅定位面单位置"""
-    model = YOLO("ultralytics/cfg/models/11/yolo11n-CBAM.yaml")
+    model = YOLO(r"F:\envs_workstation\yolo11\ultralytics\ultralytics\cfg\models\11\yolo11-CBAM.yaml")
 
     model.train(
         data=r"F:\envs_workstation\yolo11\code_train\stage1\stage1_dataset.yaml",
